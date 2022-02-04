@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>Portfólio</title>
+  <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+  <meta name="author" content="John Anderson" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+</head>
+<body>
+<div id="particles-js"></div>
+<script src="particles.js"></script>
+<script src="app.js"></script>
+<script>
+  let count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script>
+<div class="container">
+<header>
+<h1>JO<span>HN</span></h1>
+ <div class="conteudo">
+  <h2>John Anderson</h2>
+  <p id="p">Web Developer / Front-end</p><br>
+    <div class="social">
+      <a href="#"><i class="fab fa-linkedin-in" target="_blank" rel="external"></i> Linkedin</a>
+      <a href="https://github.com/John-Developerx"><i class="fab fa-github-alt" target="_blank" rel="external"></i> GitHub</a>
+      <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+    </div>
+</div>
+<div class="barras">
+  <div class="linha" id="linha1"></div>
+  <div class="linha" id="linha2"></div>
+  <div class="linha" id="linha3"></div>
+</div>
+</header>
+<aside class="sidebar">
+  <nav>
+   <section>
+     <img id="eu" src="eu.jpg" alt="my profile">
+     <p id="navp">JOHN ANDERSON</p>
+   </section><br>
+   <ul class="navul">
+     <i class="fas fa-user-alt"></i>
+     <li id="ab">Sobre mim</li>
+     <i class="fas fa-brain"></i>
+     <li id="kn">Conhecimentos</li>
+     <i class="fas fa-flask"></i>
+     <li id="exp">Experiência</li>
+     <i class="fas fa-file-alt"></i>
+     <li id="pr">Projetos</li>
+     <i class="fas fa-envelope"></i>
+     <li id="co">Contato</li>
+   </ul>
+  </nav>
+ </aside>
+ <br>
+ <main>
+ <section class="about">
+   <h2>Front-end developer</h2>
+   <br>
+   <h3>Sobre mim:</h3>
+   <br>
+  <p id="pabout">Meu nome é <span> John Anderson</span>. Eu tenho 19 anos, Sou do Brasil e estudo desenvolvimento web. Sou uma pessoa simples, criativa e entusiasta. Eu sempre gosto de criar algo para mim que seja útil para os outros. 
+</p>
+  <br>
+ </section>
+ <br>
+ <section class="knowledge">
+   <h2>Conhecimentos</h2>
+   <ul id="know">
+     <li id="html">HTML</li>
+     <li id="css">CSS</li>
+     <li id="js">JavaScript</li>
+     <li id="py">Python (básico)</li>
+     <li id="gh">GitHub</li>
+   </ul>
+ </section>
+ <br>
+ <section class="experience">
+   <h2>Experiência</h2>
+   <h3>Front-end development</h3>
+   <p>2021</p>
+   <br>
+   <p> Eu tenho experiência com front-end em projetos pessoais.</p>
+ </section>
+ <br>
+ <section class="projects">
+   <h2>Projetos</h2>
+   <br>
+   <ul>
+     <li><a href="https://john-developerx.github.io/Portfolio/" target="_blank">Portfólio</a></li>
+     <li><a href="https://john-developerx.github.io/Calculadora/" target="_blank">Calculadora</a></li>
+     <li><a href="https://john-developerx.github.io/Formulario/" target="_blank">Formulário</a></li>
+     <li><a href="https://john-developerx.github.io/Netflix/" target="_blank">Netflix</a></li>
+     <li><a href="https://john-developerx.github.io/Netflix_clone/" target="_blank">Netflix-page</a></li>
+     <li><a href="https://john-developerx.github.io/Math-in-programming/" target="_blank">Matemática na programação</a></li>
+     <li><a href="https://john-developerx.github.io/Game/" target="_blank">Jogo básico</a></li>
+     <li><a href="https://john-developerx.github.io/Clock/" target="_blank">Relógio digital</a></li>
+     <li><a href="https://john-developerx.github.io/Cards/" target="_blank">Cartas</a></li>
+     <li><a href="https://john-developerx.github.io/whatsapp-UI/" target="_blank">Whatsapp-UI</a></li>
+   </ul>
+ </section>
+ </main>
+ <br>
+ <footer>
+   <h2>Contato</h2>
+   <br><i class="fas fa-envelope email"></i>
+   <p>Email: johndeveloperxx@gmail.com</p>
+   <br><i class="fas fa-phone-alt"></i>
+   <a id="whats" href="https://bit.ly/Whatsapp_dev">whatsapp</a>
+   <br>
+   <br>
+ </footer>
+ </div>
+<script src="main.js"></script>
+</body>
+</html>
