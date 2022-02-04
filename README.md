@@ -5,7 +5,7 @@
 <P> Feito pelo celular. </P>
 
 # Project
-<P> https://john-developerx.github.io/portfolio/ </p>
+<P> http://bit.ly/portfolio-developer </p>
 
 <h2> Technologies used </h2>
 
